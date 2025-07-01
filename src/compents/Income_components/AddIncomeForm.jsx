@@ -5,8 +5,8 @@ import { BsCalendarDateFill } from "react-icons/bs";
 import { CATEGORY_META } from '../../utils/category';
 import { FaWallet } from 'react-icons/fa';
 import CustomDropdown from '../dropdown/CustomDropdown';
-import CustomDatePicker from '../datepicker/customDatepicker';
 import { colors } from '../../constant/color';
+import CustomDatePicker from '../datepicker/CustomDatePicker';
 
 
 const AddIncomeForm = ({ onSubmit }) => {
