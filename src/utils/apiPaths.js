@@ -1,4 +1,4 @@
-export const BASE_URL_SERVER = import.meta.env.VITE_BASE_URL
+export const BASE_URL_SERVER = "https://finsight-web-server.onrender.com"
 
 export const API_PATHS = {
       AUTH: {
