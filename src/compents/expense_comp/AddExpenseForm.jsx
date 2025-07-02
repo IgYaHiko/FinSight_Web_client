@@ -61,7 +61,7 @@ const AddExpenseForm = ({ onSubmit }) => {
       <GeneralCusBtn
         styles="mt-10"
         lefttIcon={<FaWallet />}
-        name="Add Income"
+        name="Add Expense"
         backgroundColors={colors.rose}
         type="submit"
       />

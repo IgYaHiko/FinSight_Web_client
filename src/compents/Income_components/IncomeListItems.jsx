@@ -1,12 +1,13 @@
 import React from 'react'
 import { colors } from '../../constant/color'
-import { CATEGORY_META } from '../../utils/category';
+
 import { LuTrash2, LuTrendingUp } from 'react-icons/lu';
 import { formatAmount } from '../../utils/validate';
+import { SALARY_CATEGORY_META } from '../../utils/category';
 
 const IncomeListItems = ({ catagory, amount, type = "income", date, icon, hideDelete,onDelete }) => {
   const cat = (catagory || "other").toLowerCase();
-  const matched = CATEGORY_META[cat] || CATEGORY_META["other"];
+  const matched = SALARY_CATEGORY_META[cat] || SALARY_CATEGORY_META["other"];
 
   return (
     <div

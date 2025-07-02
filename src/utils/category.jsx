@@ -1,17 +1,123 @@
-import { FaBolt, FaBriefcase, FaBus, FaQuestion, FaShoppingCart, FaUtensils } from "react-icons/fa";
-import { SiFreelancer } from "react-icons/si";
-import { colors } from "../constant/color";
-import { BsWallet } from "react-icons/bs";
-import { GiTargetDummy } from "react-icons/gi";
+
+import React from 'react';
+import {
+  FaBriefcase, FaPiggyBank, FaStore, FaHandshake, FaCar, FaMoneyCheckAlt,
+  FaRegCreditCard, FaGraduationCap, FaMoneyBillWave, FaCoins, FaDollarSign,
+  FaLaptopCode, FaUtensils, FaShoppingCart, FaBus, FaBolt, FaHome, FaGasPump,
+  FaFilm, FaShieldAlt, FaTshirt, FaWifi, FaMobileAlt, FaShoppingBag, FaDumbbell,
+  FaBook, FaGift, FaHandHoldingHeart, FaDog, FaCouch, FaLaptop, FaChair, FaPlane,
+  FaUmbrellaBeach, FaCoffee, FaCookieBite, FaConciergeBell, FaGlassCheers, FaBasketballBall,
+  FaTicketAlt, FaTools, FaHammer, FaUniversity, FaMoneyCheck, FaParking, FaRoad,
+  FaBaby, FaPumpSoap, FaSoap, FaBroom, FaWineBottle, FaSmoking, FaSpa, FaCut,
+  FaTaxi, FaDonate, FaGamepad
+} from 'react-icons/fa';
+
+import {
+  SiFreelancer, SiBuymeacoffee, SiCashapp, SiShopify, SiGoogleads, SiGooglescholar,
+  SiOnlyfans, SiPatreon, SiFiverr, SiUpwork, SiYoutube, SiTiktok, SiGithubsponsors
+} from 'react-icons/si';
+
+import {
+  MdRealEstateAgent, MdBusinessCenter, MdEngineering, MdSupportAgent,
+  MdMedicalServices, MdOutlineEventAvailable, MdSubscriptions
+} from 'react-icons/md';
+
+import { GiTargetDummy } from 'react-icons/gi';
 
 export const CATEGORY_META = {
-  food: { icon: <FaUtensils size={18}  color='white'/>, bg: '#FF6347' },        // 🍅 Tomato Red
-  groceries: { icon: <FaShoppingCart color='white' size={18} />, bg: '#4B5563' }, // Gray
-  transport: { icon: <FaBus size={18} color='white' />, bg: '#3B82F6' },        // Blue
-  bills: { icon: <FaBolt size={18} color='white' />, bg: '#F59E0B' },           // Amber
-  salary: { icon: <FaBriefcase size={18} color='white' />, bg: '#10B981' },     // Green
-  other: { icon: <GiTargetDummy size={18} color='white' />, bg: '#6B7280' },
-  freelancing: {icon:<SiFreelancer size={20} color='white' /> ,bg: colors.primary  },
-  
-     // Neutral
+  food: { icon: <FaUtensils size={18} color="white" />, bg: '#FF6347' },
+  groceries: { icon: <FaShoppingCart size={18} color="white" />, bg: '#4B5563' },
+  commute: { icon: <FaBus size={18} color="white" />, bg: '#3B82F6' },
+  bills: { icon: <FaBolt size={18} color="white" />, bg: '#F59E0B' },
+  other: { icon: <GiTargetDummy size={18} color="white" />, bg: '#6B7280' },
+  house_rent: { icon: <FaHome size={18} color="white" />, bg: '#10B981' },
+  fuel: { icon: <FaGasPump size={18} color="white" />, bg: '#EF4444' },
+  entertainment: { icon: <FaFilm size={18} color="white" />, bg: '#8B5CF6' },
+  software_tools: { icon: <MdSubscriptions size={18} color="white" />, bg: '#EC4899' },
+  clinic_visits: { icon: <MdMedicalServices size={18} color="white" />, bg: '#F43F5E' },
+  vehicle_insurance: { icon: <FaShieldAlt size={18} color="white" />, bg: '#6366F1' },
+  clothing: { icon: <FaTshirt size={18} color="white" />, bg: '#22D3EE' },
+  broadband: { icon: <FaWifi size={18} color="white" />, bg: '#16A34A' },
+  recharge: { icon: <FaMobileAlt size={18} color="white" />, bg: '#A855F7' },
+  online_orders: { icon: <FaShoppingBag size={18} color="white" />, bg: '#0EA5E9' },
+  gym: { icon: <FaDumbbell size={18} color="white" />, bg: '#10B981' },
+  school_fees: { icon: <FaGraduationCap size={18} color="white" />, bg: '#F59E0B' },
+  stationery: { icon: <FaBook size={18} color="white" />, bg: '#8B5CF6' },
+  gifts: { icon: <FaGift size={18} color="white" />, bg: '#E11D48' },
+  charity: { icon: <FaHandHoldingHeart size={18} color="white" />, bg: '#14B8A6' },
+  pets: { icon: <FaDog size={18} color="white" />, bg: '#FBBF24' },
+  home: { icon: <FaCouch size={18} color="white" />, bg: '#6D28D9' },
+  electronics: { icon: <FaLaptop size={18} color="white" />, bg: '#1D4ED8' },
+  furniture: { icon: <FaChair size={18} color="white" />, bg: '#78350F' },
+  travel: { icon: <FaPlane size={18} color="white" />, bg: '#3B82F6' },
+  vacation: { icon: <FaUmbrellaBeach size={18} color="white" />, bg: '#38BDF8' },
+  coffee: { icon: <FaCoffee size={18} color="white" />, bg: '#92400E' },
+  snacks: { icon: <FaCookieBite size={18} color="white" />, bg: '#F59E0B' },
+  restaurant: { icon: <FaConciergeBell size={18} color="white" />, bg: '#DC2626' },
+  nightlife: { icon: <FaGlassCheers size={18} color="white" />, bg: '#BE185D' },
+  sports: { icon: <FaBasketballBall size={18} color="white" />, bg: '#F97316' },
+  tickets: { icon: <FaTicketAlt size={18} color="white" />, bg: '#6EE7B7' },
+  repair: { icon: <FaTools size={18} color="white" />, bg: '#374151' },
+  maintenance: { icon: <FaHammer size={18} color="white" />, bg: '#0F766E' },
+  bank_fees: { icon: <FaUniversity size={18} color="white" />, bg: '#DC2626' },
+  atm_fees: { icon: <FaMoneyCheck size={18} color="white" />, bg: '#C084FC' },
+  parking: { icon: <FaParking size={18} color="white" />, bg: '#FACC15' },
+  tolls: { icon: <FaRoad size={18} color="white" />, bg: '#3F6212' },
+  childcare: { icon: <FaBaby size={18} color="white" />, bg: '#F472B6' },
+  toiletries: { icon: <FaPumpSoap size={18} color="white" />, bg: '#A1A1AA' },
+  laundry: { icon: <FaSoap size={18} color="white" />, bg: '#6D28D9' },
+  cleaning: { icon: <FaBroom size={18} color="white" />, bg: '#CBD5E1' },
+  alcohol: { icon: <FaWineBottle size={18} color="white" />, bg: '#9D174D' },
+  cigarettes: { icon: <FaSmoking size={18} color="white" />, bg: '#6B7280' },
+  beauty: { icon: <FaSpa size={18} color="white" />, bg: '#F0ABFC' },
+  salon: { icon: <FaCut size={18} color="white" />, bg: '#FB923C' },
+  taxi: { icon: <FaTaxi size={18} color="white" />, bg: '#FCD34D' },
+  ride_sharing: { icon: <FaCar size={18} color="white" />, bg: '#4ADE80' },
+  ngo_contribution: { icon: <FaDonate size={18} color="white" />, bg: '#F87171' },
+  arcade_tokens: { icon: <FaGamepad size={18} color="white" />, bg: '#8B5CF6' },
+};
+
+export const SALARY_CATEGORY_META = {
+  salary: { icon: <FaBriefcase size={18} color="white" />, bg: '#10B981' },
+  freelancing: { icon: <SiFreelancer size={20} color="white" />, bg: '#3B82F6' },
+  consulting: { icon: <FaHandshake size={18} color="white" />, bg: '#8B5CF6' },
+  real_estate: { icon: <MdRealEstateAgent size={20} color="white" />, bg: '#EC4899' },
+  e_commerce: { icon: <FaStore size={18} color="white" />, bg: '#F59E0B' },
+  affiliate_marketing: { icon: <FaPiggyBank size={18} color="white" />, bg: '#F43F5E' },
+  investment_returns: { icon: <FaCoins size={18} color="white" />, bg: '#22D3EE' },
+  rent_income: { icon: <FaMoneyBillWave size={18} color="white" />, bg: '#6366F1' },
+  stock_trading: { icon: <FaDollarSign size={18} color="white" />, bg: '#16A34A' },
+  crypto: { icon: <FaMoneyCheckAlt size={18} color="white" />, bg: '#4ADE80' },
+  youtube: { icon: <SiYoutube size={20} color="white" />, bg: '#DC2626' },
+  tiktok: { icon: <SiTiktok size={20} color="white" />, bg: '#0F172A' },
+  content_creation: { icon: <FaLaptopCode size={18} color="white" />, bg: '#0284C7' },
+  online_courses: { icon: <FaGraduationCap size={18} color="white" />, bg: '#A855F7' },
+  coaching: { icon: <MdSupportAgent size={20} color="white" />, bg: '#10B981' },
+  adsense: { icon: <SiGoogleads size={20} color="white" />, bg: '#F59E0B' },
+  patreon: { icon: <SiPatreon size={20} color="white" />, bg: '#EF4444' },
+  onlyfans: { icon: <SiOnlyfans size={20} color="white" />, bg: '#3B82F6' },
+  github_sponsors: { icon: <SiGithubsponsors size={20} color="white" />, bg: '#6B7280' },
+  sponsorship: { icon: <FaRegCreditCard size={18} color="white" />, bg: '#D946EF' },
+  fiverr: { icon: <SiFiverr size={20} color="white" />, bg: '#10B981' },
+  upwork: { icon: <SiUpwork size={20} color="white" />, bg: '#22C55E' },
+  shopify: { icon: <SiShopify size={20} color="white" />, bg: '#15803D' },
+  drop_shipping: { icon: <FaStore size={18} color="white" />, bg: '#0EA5E9' },
+  paid_surveys: { icon: <FaCoins size={18} color="white" />, bg: '#E11D48' },
+  selling_photos: { icon: <FaMoneyBillWave size={18} color="white" />, bg: '#7C3AED' },
+  event_management: { icon: <MdOutlineEventAvailable size={20} color="white" />, bg: '#F97316' },
+  insurance_commission: { icon: <FaHandshake size={18} color="white" />, bg: '#DB2777' },
+  network_marketing: { icon: <FaBriefcase size={18} color="white" />, bg: '#2563EB' },
+  agency_services: { icon: <MdBusinessCenter size={20} color="white" />, bg: '#0D9488' },
+  mobile_apps: { icon: <FaLaptopCode size={18} color="white" />, bg: '#2563EB' },
+  game_dev: { icon: <FaLaptopCode size={18} color="white" />, bg: '#EF4444' },
+  print_on_demand: { icon: <SiBuymeacoffee size={20} color="white" />, bg: '#FCD34D' },
+  donations: { icon: <FaPiggyBank size={18} color="white" />, bg: '#D97706' },
+  cashback: { icon: <SiCashapp size={20} color="white" />, bg: '#059669' },
+  transportation: { icon: <FaCar size={18} color="white" />, bg: '#F87171' },
+  subscription_service: { icon: <MdSubscriptions size={20} color="white" />, bg: '#FB923C' },
+  tech_support: { icon: <MdEngineering size={20} color="white" />, bg: '#7DD3FC' },
+  medical_practice: { icon: <MdMedicalServices size={20} color="white" />, bg: '#EF4444' },
+  scholarships: { icon: <SiGooglescholar size={20} color="white" />, bg: '#1D4ED8' },
+  bonuses: { icon: <FaMoneyCheckAlt size={18} color="white" />, bg: '#84CC16' },
+  dividends: { icon: <FaCoins size={18} color="white" />, bg: '#A3E635' },
 };

@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import CustomInput from '../Inputs/CustomInput';
 import GeneralCusBtn from '../Inputs/GeneralCusBtn';
 import { BsCalendarDateFill } from "react-icons/bs";
-import { CATEGORY_META } from '../../utils/category';
 import { FaWallet } from 'react-icons/fa';
 import CustomDropdown from '../dropdown/CustomDropdown';
 import { colors } from '../../constant/color';
 import CustomDatePicker from '../datepicker/CustomDatePicker';
+import { SALARY_CATEGORY_META } from '../../utils/category';
 
 
 const AddIncomeForm = ({ onSubmit }) => {
@@ -30,11 +30,11 @@ const AddIncomeForm = ({ onSubmit }) => {
       {/* Category Dropdown */}
       <CustomDropdown
   title="Category"
-  value={income.catagory} // ✅ Fix here too
-  onChange={(val) => handleChange('catagory', val)} // ✅ Correct key
-  options={CATEGORY_META}
+  value={income.catagory} 
+  onChange={(val) => handleChange('catagory', val)}
+  options={SALARY_CATEGORY_META}
   iconMap={Object.fromEntries(
-    Object.entries(CATEGORY_META).map(([key, val]) => [key, val.icon])
+    Object.entries(SALARY_CATEGORY_META).map(([key, val]) => [key, val.icon])
   )}
 />
 

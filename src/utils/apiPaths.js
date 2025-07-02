@@ -1,3 +1,4 @@
+
 export const BASE_URL_SERVER = "https://finsight-web-server.onrender.com"
 
 export const API_PATHS = {
