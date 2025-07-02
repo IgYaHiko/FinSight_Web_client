@@ -75,10 +75,8 @@ FinSight is a powerful and intuitive web application designed to help individual
 | **Node.js**              | JavaScript runtime for server-side logic                                   |
 | **JWT (JSON Web Tokens)**| Secure authentication and authorization                                     |
 | **Firebase (Google Auth)**| Used specifically for Google-based authentication                        |
-| **Tailwind CSS**         | Utility-first CSS framework for consistent, responsive design              |
-| **Redux Toolkit**        | Predictable and scalable global state management                           |
-| **Framer Motion**        | Declarative animations for UI transitions and interactivity                |
-| **Chart.js / Recharts**  | Used for rendering financial graphs and visual data insights               |
+| **Tailwind CSS**         | Utility-first CSS framework for consistent, responsive design              |                         |
+| ** Recharts**  | Used for rendering financial graphs and visual data insights               |
 | **Three.js**             | Core library for rendering 3D scenes on the web                            |
 | **@react-three/fiber**   | React renderer for Three.js for building declarative 3D interfaces          |
 | **@react-three/drei**    | Helpers and abstractions for Three.js via React                            |
