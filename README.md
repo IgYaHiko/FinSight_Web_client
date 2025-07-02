@@ -48,12 +48,9 @@ FinSight is a powerful and intuitive web application designed to help individual
 ### 📅 Calendar-based View (Coming Soon)
 - Visualize financial activity based on calendar events
 
-### 🔍 Search & Filter
-- Filter transactions by category, date, or type
-- Keyword-based search
 
 ### 🌙 Dark Mode Support
-- Toggle between light and dark themes
+- Toggle between light and dark themes in the welcome page only
 
 ---
 
@@ -70,47 +67,34 @@ FinSight is a powerful and intuitive web application designed to help individual
 
 ## 🛠 Tech Stack
 
-| Tech               | Description                          |
-|--------------------|--------------------------------------|
-| **React**          | Frontend library                     |
-| **Vite**           | Fast bundler and development server  |
-| **Tailwind CSS**   | Utility-first CSS framework          |
-| **React Icons**    | Icons library                        |
-| **Firebase**       | Authentication & Firestore database  |
-| **Framer Motion**  | Animations                           |
-| **Chart.js / Recharts** | Visualizations                  |
-| **Redux Toolkit**  | Global state management              |
+| Tech                     | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **MongoDB**              | NoSQL database for storing user data and transactions                      |
+| **Express.js**           | Backend framework for routing and APIs                                     |
+| **React**                | Frontend library for building the UI                                       |
+| **Node.js**              | JavaScript runtime for server-side logic                                   |
+| **JWT (JSON Web Tokens)**| Secure authentication and authorization                                     |
+| **Firebase (Google Auth)**| Used specifically for Google-based authentication                        |
+| **Tailwind CSS**         | Utility-first CSS framework for consistent, responsive design              |
+| **Redux Toolkit**        | Predictable and scalable global state management                           |
+| **Framer Motion**        | Declarative animations for UI transitions and interactivity                |
+| **Chart.js / Recharts**  | Used for rendering financial graphs and visual data insights               |
+| **Three.js**             | Core library for rendering 3D scenes on the web                            |
+| **@react-three/fiber**   | React renderer for Three.js for building declarative 3D interfaces          |
+| **@react-three/drei**    | Helpers and abstractions for Three.js via React                            |
+| **GSAP**                 | Animation library for scroll-based and interactive transitions             |
 
----
+
 
 ## 👥 Team
 
 | Name             | Role                      |
 |------------------|---------------------------|
-| **Subhro Kolay** | Full Stack Developer, Project Lead |
+| **Subhro Kolay** | Project head & developer |
 | **Chandrima Ray** | Frontend Developer |
 | **Avik Bera**     | Backend Developer |
 | **Ayan Das**      | UI/UX Design, Frontend |
-| **Akash Maity**   | DevOps & Integration |
+| **Akash Maity**   | developer |
 | **Bristi Danre**  | Documentation & Testing |
 
 ---
-
-## 📁 Project Structure
-
-```bash
-FinSight/
-├── public/
-│   └── assets/
-├── src/
-│   ├── components/
-│   │   └── Income_components/
-│   │   └── expense_comp/
-│   ├── pages/
-│   ├── utils/
-│   ├── redux/
-│   ├── App.jsx
-│   └── main.jsx
-├── .env
-├── package.json
-└── README.md
