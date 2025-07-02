@@ -12,11 +12,18 @@ FinSight is a powerful and intuitive web application designed to help individual
 
 ### 📊 Dashboard Overview
 
-![Dashboard](assets/dashboard.png)
+![Dashboard](public/dashboard.png)
 
-### ➕ Add Expense / Income
+### ➕ Add Income
 
-![Add Form](assets/add-form.png)
+![Income](public/income.png)
+
+
+### ➕ Add Expense
+
+![Income](public/expense.png)
+
+
 
 ---
 
