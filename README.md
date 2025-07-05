@@ -8,7 +8,7 @@ FinSight is a powerful and intuitive web application designed to help individual
 
 ### 🏠 Welcome Page
 
-![Welcome Page](public/welcome.png)
+![Welcome Page](public/dash.png)
 
 ### 📊 Dashboard Overview
 
