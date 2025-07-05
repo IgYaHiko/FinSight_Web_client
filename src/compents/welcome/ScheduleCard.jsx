@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaRegCalendarAlt } from 'react-icons/fa';
-import { colors } from '../constant/color';
+import { colors } from '../../constant/color';
 
 const ScheduleCard = ({darkmode}) => {
   const selectedDay = {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { colors } from '../constant/color';
+import { colors } from '../../constant/color';
 
 const Balance = ({darkmode}) => {
   const [currentBalance, setCurrentBalance] = useState(20000);

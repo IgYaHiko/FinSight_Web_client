@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { colors } from '../constant/color';
+import { colors } from '../../constant/color';
 import { GoCheck } from "react-icons/go";
 
 const Track = () => {

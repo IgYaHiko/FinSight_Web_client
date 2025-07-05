@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { colors } from '../constant/color';
-import { images } from '../constant/images';
+import { colors } from '../../constant/color';
+import { images } from '../../constant/images';
 
 const User = () => {
   const targetUsers = 100800; // 100.80k
